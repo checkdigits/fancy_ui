@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/01/08 14:09:17.000.511,=C:\vms_share\Unit1.pas</Transaction>
+    <Transaction>2021/01/08 14:10:26.000.991,=C:\vms_share\Unit1.pas</Transaction>
+    <Transaction>2021/01/08 14:39:30.000.197,C:\vms_share\test_projects\test3\Unit1.pas=C:\vms_share\Unit1.pas</Transaction>
+    <Transaction>2021/01/08 14:39:30.000.197,C:\vms_share\test_projects\test3\Unit1.fmx=C:\vms_share\Unit1.fmx</Transaction>
+    <Transaction>2021/01/08 14:39:46.000.588,C:\vms_share\test_projects\test3\test3.dproj=C:\vms_share\Project1.dproj</Transaction>
+    <Transaction>2021/01/12 15:25:11.000.832,C:\vms_share\test_projects\test3\Unit1.fmx=C:\vms_share\test_projects\test3\forms.testui.fmx</Transaction>
+    <Transaction>2021/01/12 15:25:11.000.832,C:\vms_share\test_projects\test3\Unit1.pas=C:\vms_share\test_projects\test3\forms.testui.pas</Transaction>
+    <Transaction>2021/01/12 15:25:34.000.334,C:\vms_share\test_projects\test3\test3.dproj=C:\vms_share\test_projects\test3\testui.dproj</Transaction>
+    <Transaction>2021/01/12 17:00:31.000.502,=C:\vms_share\test_projects\test3\Unit1.pas</Transaction>
+    <Transaction>2021/01/12 17:00:56.000.854,C:\vms_share\test_projects\test3\modules.uihelper.pas=C:\vms_share\test_projects\test3\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

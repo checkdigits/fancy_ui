@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7482DBF6-D481-4478-85FD-0406AF5588DC}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="fancy_fmx\testui.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="fluent_ui_vcl\vclfluentuicalculator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plain_vcl\vclcalculator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="unsettings\unsettingsapp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="testui">
+        <MSBuild Projects="fancy_fmx\testui.dproj"/>
+    </Target>
+    <Target Name="testui:Clean">
+        <MSBuild Projects="fancy_fmx\testui.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="testui:Make">
+        <MSBuild Projects="fancy_fmx\testui.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vclfluentuicalculator">
+        <MSBuild Projects="fluent_ui_vcl\vclfluentuicalculator.dproj"/>
+    </Target>
+    <Target Name="vclfluentuicalculator:Clean">
+        <MSBuild Projects="fluent_ui_vcl\vclfluentuicalculator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vclfluentuicalculator:Make">
+        <MSBuild Projects="fluent_ui_vcl\vclfluentuicalculator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vclcalculator">
+        <MSBuild Projects="plain_vcl\vclcalculator.dproj"/>
+    </Target>
+    <Target Name="vclcalculator:Clean">
+        <MSBuild Projects="plain_vcl\vclcalculator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vclcalculator:Make">
+        <MSBuild Projects="plain_vcl\vclcalculator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="unsettingsapp">
+        <MSBuild Projects="unsettings\unsettingsapp.dproj"/>
+    </Target>
+    <Target Name="unsettingsapp:Clean">
+        <MSBuild Projects="unsettings\unsettingsapp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="unsettingsapp:Make">
+        <MSBuild Projects="unsettings\unsettingsapp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="testui;vclfluentuicalculator;vclcalculator;unsettingsapp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="testui:Clean;vclfluentuicalculator:Clean;vclcalculator:Clean;unsettingsapp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="testui:Make;vclfluentuicalculator:Make;vclcalculator:Make;unsettingsapp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
